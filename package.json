@@ -1,0 +1,49 @@
+{
+  "name": "effector-rhf-adapter",
+  "version": "0.9.0",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "repository": "https://github.com/Devisione/effector-rhf-adapter.git",
+  "author": "SERPOVSKOY <as.serpovskoy@mail.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "vitest": "0.33.0",
+    "@types/lodash.isequal": "4.5.0",
+    "effector": "23.1.0",
+    "effector-react": "23.1.0",
+    "prettier": "2.8.8",
+    "react": "18.2.0",
+    "@types/react": "18.2.15",
+    "react-hook-form": "7.45.2",
+    "typescript": "5.2.2"
+  },
+  "scripts": {
+    "build": "rm -rf dist && yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "prepublish": "npm run build",
+    "push_npm": "npm publish"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "effector": "^23.1.0",
+    "effector-react": "^23.1.0",
+    "react": "^18.0.0",
+    "react-hook-form": "^7.45.2"
+  },
+  "keywords": [
+    "react",
+    "react hook form",
+    "effector",
+    "effector-rhf-adapter"
+  ],
+  "dependencies": {
+    "lodash.isequal": "4.5.0",
+    "tslib": "^2.7.0"
+  }
+}
