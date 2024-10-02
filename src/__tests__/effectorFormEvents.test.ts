@@ -2,7 +2,7 @@ import type { FormState } from "react-hook-form";
 import { describe, expect, it } from "vitest";
 import { createEffectorForm } from "../";
 
-describe("Effector Form - Event tests", () => {
+describe("effector-rhf-adapter - Event tests", () => {
   it("should initialize $formState with null", () => {
     const form = createEffectorForm<any>();
     const initialFormState = form.$formState.getState();

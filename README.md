@@ -10,7 +10,7 @@ yarn add effector-rhf-adapter
 
 ## API
 
-**index.tsx** (cвязка формы React-hook-form и effector-form)
+**index.tsx** (cвязка формы React-hook-form и Effector)
 ```typescript jsx
 import { FormProvider, useForm } from "react-hook-form";
 import { useEffectorForm } from "effector-rhf-adapter";

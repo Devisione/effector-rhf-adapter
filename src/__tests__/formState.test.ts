@@ -2,7 +2,7 @@ import type { FormState } from "react-hook-form";
 import { beforeEach, describe, expect, it } from "vitest";
 import { createEffectorForm } from "../";
 
-describe("Effector Form - $formState tests", () => {
+describe("effector-rhf-adapter - $formState tests", () => {
   let effectorForm: ReturnType<typeof createEffectorForm<any>>;
   let mockFormState: FormState<any>;
 
